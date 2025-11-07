@@ -1,18 +1,16 @@
 apiVersion: v1
 description: High Performance Object Storage
 name: minio
-version: 5.4.0
-appVersion: RELEASE.2024-12-18T13-15-44Z
+version: 6.0.0
+appVersion: RELEASE.2025-10-15T17-29-55Z
 keywords:
   - minio
   - storage
   - object-storage
   - s3
   - cluster
-home: https://min.io
-icon: https://min.io/resources/img/logo/MINIO_wordmark.png
 sources:
-- https://github.com/minio/minio
+  - https://github.com/holysoles/minio-helm
 maintainers:
-- name: MinIO, Inc
-  email: dev@minio.io
+  - name: holysoles
+    url: https://github.com/holysoles
