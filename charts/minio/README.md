@@ -19,7 +19,7 @@ This chart bootstraps MinIO Cluster on [Kubernetes](http://kubernetes.io) using 
 ## Configure MinIO Helm repo
 
 ```bash
-helm repo add minio https://charts.min.io/
+helm repo add minio-helm https://holysoles.github.io/minio-helm
 ```
 
 ### Installing the Chart
