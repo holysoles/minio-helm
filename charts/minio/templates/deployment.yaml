@@ -64,8 +64,20 @@ spec:
         - name: {{ .Chart.Name }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
-          command:
-            - "minio server {{ $bucketRoot }} -S {{ .Values.certsPath }} --address :{{ .Values.minioAPIPort }} --console-address :{{ .Values.minioConsolePort }} {{- template "minio.extraArgs" . }}"
+          args:
+            - "server"
+            - "{{ $bucketRoot }}"
+            {{- if .Values.tls.enabled }}
+            - "-S"
+            - "{{ .Values.certsPath }}"
+            {{- end }}
+            - "--address"
+            - ":{{ .Values.minioAPIPort }}"
+            - "--console-address"
+            - ":{{ .Values.minioConsolePort }}"
+            {{- if .Values.extraArgs }}
+              {{- toYaml .Values.extraArgs | nindent 12 }}
+            {{- end }}
           volumeMounts:
             - name: minio-user
               mountPath: "/tmp/credentials"
