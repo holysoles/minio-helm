@@ -111,15 +111,6 @@ Determine name for scc role and rolebinding
 {{- end -}}
 
 {{/*
-Properly format optional additional arguments to MinIO binary
-*/}}
-{{- define "minio.extraArgs" -}}
-{{- range .Values.extraArgs -}}
-{{ " " }}{{ . }}
-{{- end -}}
-{{- end -}}
-
-{{/*
 Return the proper Docker Image Registry Secret Names
 */}}
 {{- define "minio.imagePullSecrets" -}}
