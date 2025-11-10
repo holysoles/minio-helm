@@ -1,7 +1,7 @@
 apiVersion: v1
 description: High Performance Object Storage
 name: minio
-version: 6.0.3
+version: 6.0.4
 appVersion: RELEASE.2025-10-15T17-29-55Z
 keywords:
   - minio
