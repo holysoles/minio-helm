@@ -3,6 +3,26 @@ entries:
   minio:
   - apiVersion: v1
     appVersion: RELEASE.2025-10-15T17-29-55Z
+    created: "2025-11-10T16:36:36.662054751Z"
+    description: High Performance Object Storage
+    digest: 7aa2aebbe8203418973406add232925bec8df031af4fdb09cd90755fd2cab709
+    keywords:
+    - minio
+    - storage
+    - object-storage
+    - s3
+    - cluster
+    maintainers:
+    - name: holysoles
+      url: https://github.com/holysoles
+    name: minio
+    sources:
+    - https://github.com/holysoles/minio-helm
+    urls:
+    - https://github.com/holysoles/minio-helm/releases/download/minio-6.0.3/minio-6.0.3.tgz
+    version: 6.0.3
+  - apiVersion: v1
+    appVersion: RELEASE.2025-10-15T17-29-55Z
     created: "2025-11-09T00:18:32.819560548Z"
     description: High Performance Object Storage
     digest: 2660aba2c62cbe4224c153a27b32a1a3209cfe1d6fd379f12d75b3c24b7d0642
@@ -61,4 +81,4 @@ entries:
     urls:
     - https://github.com/holysoles/minio-helm/releases/download/minio-6.0.0/minio-6.0.0.tgz
     version: 6.0.0
-generated: "2025-11-09T00:18:32.819572681Z"
+generated: "2025-11-10T16:36:36.662090017Z"
